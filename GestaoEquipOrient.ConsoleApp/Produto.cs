@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GestaoEquipOrient.ConsoleApp
 {
-        internal class Produto
+        public class Produto
         {
         //atributos publicos
             public string nomeProduto { get; set; }
@@ -19,33 +19,6 @@ namespace GestaoEquipOrient.ConsoleApp
 
         static int id = 1;
         static List<Produto> produtos = new List<Produto>();
-
-        public static void ProdutoMostrar(List<Produto> produtos)
-        {
-            var cust1 = new Produto()
-            {
-                IdProdutos = id++,
-                nomeProduto = "Teclado",
-                precoProduto = "200",
-                dataProdutoDia = "20",
-                dataProdutoMes = "10",
-                dataProdutoAno = "2020",
-                fabriProduto = "Razer"
-
-            };
-            produtos.Add(cust1);
-
-            produtos.Add(new Produto()
-            {
-                IdProdutos = id++,
-                nomeProduto = "Mouse Gamer",
-                precoProduto = "100",
-                dataProdutoDia = "10",
-                dataProdutoMes = "01",
-                dataProdutoAno = "2020",
-                fabriProduto = "Multilaser"
-            });
-        }
 
         //Adicionar um produto
         public static void AddProduto()

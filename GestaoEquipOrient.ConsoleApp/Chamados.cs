@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GestaoEquipOrient.ConsoleApp
 {
-    internal class Chamado
+    public class Chamado
     {
         //atributos publicos
         public string tituloChamado { get; set; }
@@ -26,21 +26,6 @@ namespace GestaoEquipOrient.ConsoleApp
         static int id = 1;
 
         static List<Chamado> chamados = new List<Chamado>();
-
-        public static void ChamadoMostrar(List<Chamado> chamados)
-        {
-            chamados.Add(new Chamado()
-            { 
-                IdChamados = id++,
-                tituloChamado = "Manutenção mouse",
-                descriChamado = "Arrumar sensor do mouse",
-                dataChamadoDia = "16",
-                dataChamadoMes = "02",
-                dataChamadoAno = "2020",
-                equipChamado = "Teclado"
-            });
-
-        }
 
             private static Chamado EncontrarProdutoPorId1()
         {
